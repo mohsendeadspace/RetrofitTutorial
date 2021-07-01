@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEmail"
+        android:inputType="text"
+        android:hint="Email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtUsername"
+        android:inputType="text"
+        android:layout_below="@+id/edtEmail"
+        android:layout_marginTop="20dp"
+        android:hint="Username"/>
+
+
+
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPhone"
+        android:inputType="text"
+        android:layout_below="@+id/edtUsername"
+        android:hint="Phone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPass"
+        android:layout_below="@+id/edtPhone"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:hint="Password"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPass"
+        android:onClick="registerUser"
+        android:id="@+id/btnregister"
+        android:layout_marginTop="20dp"
+        android:text="register"/>
+
+
+
+
+
+
+</RelativeLayout>
